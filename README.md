@@ -54,13 +54,7 @@ https://ohmyz.sh
 ## 5. IME
 
 ### fcitx5
-```sh
-# dnf5
-sudo pacman -S fcitx5 rime
-# OR
-# aur
-sudo dnf install fcitx5 rime
-```
+`sudo pacman -S fcitx5 fcitx5-rime`
 
 #### 万象输入法
 https://github.com/amzxyz/rime_wanxiang
@@ -132,8 +126,7 @@ https://mpv.io
 https://github.com/Samillion/ModernZ
 
 ## 8. Q&A
-### rpm 跳过数字签名安装
-`sudo rpm -ivh --nodigest --nofiledigest package.rpk`
+//progressing
 
 ## 9. Colorschemes
 ### Rose Pine
