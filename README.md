@@ -1,4 +1,4 @@
-![screenshot](https://raw.githubusercontent.com/jianlongliu/myarch/main/Screenshot.png)
+![screenshot](/Screenshot.png)
 ## 1. 准备
 ### 1.1 USB烧录工具
 Ventoy    
