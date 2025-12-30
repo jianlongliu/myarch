@@ -39,13 +39,7 @@ https://github.com/Nomadcxx/sysc-greet
 
 ## 4. Shell
 ### zsh
-```bash
-# fedora 
-sudo dnf install zsh
-# OR
-# arch
-sudo pacman -S zsh
-```
+`sudo pacman -S zsh`    
 
 #### oh-my-zsh
 https://ohmyz.sh    
@@ -84,43 +78,20 @@ sudo pacman -S firewalld
 
 ### yazi
 https://github.com/sxyazi/yazi
-`paru -S yazi`
-
-```toml
-# ~/.config/yazi/yazi.toml
-[opener]
-edit = [
-    { run = 'nvim "$@"', block = true, desc = "Editor" },
-]
-
-[open]
-rules = [
-    { mime = "text/*", use = "edit" },
-    { name = "*", use = "edit" },
-]
-
-[mgr]
-show_hidden = true
-```
-
+`paru -S yazi`    
 
 ### neovim
 https://neovim.io/
 https://github.com/neovim/neovim
-```zsh
-# fedora
-sudo dnf install neovim
-# OR
-sudo pacman -S neovim
-```
+`sudo pacman -S neovim`
 
 #### lazyvim
 https://www.lazyvim.org/
 `git clone https://github.com/LazyVim/starter ~/.config/nvim`
 
 ### MPV
-`paru -S mpv`
-https://mpv.io
+https://mpv.io    
+`paru -S mpv`     
 
 #### Modernz 
 https://github.com/Samillion/ModernZ
