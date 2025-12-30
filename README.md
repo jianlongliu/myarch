@@ -78,16 +78,16 @@ sudo pacman -S firewalld
 ## 7. App
 
 ### yazi
-https://github.com/sxyazi/yazi
+https://github.com/sxyazi/yazi    
 `paru -S yazi`    
 
 ### neovim
 https://neovim.io/
-https://github.com/neovim/neovim
+https://github.com/neovim/neovim    
 `sudo pacman -S neovim`
 
 #### lazyvim
-https://www.lazyvim.org/
+https://www.lazyvim.org/    
 `git clone https://github.com/LazyVim/starter ~/.config/nvim`
 
 ### MPV
