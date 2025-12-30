@@ -1,4 +1,6 @@
 ![screenshot](/Screenshot.png)
+![screenshot](/Screenshot-X.png)
+
 ## 1. 准备
 ### 1.1 USB烧录工具
 Ventoy    
