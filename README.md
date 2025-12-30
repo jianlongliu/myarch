@@ -1,2 +1,143 @@
-# myarch
-自用桌面 Arch Linux 方案
+## 1. 准备
+### 1.1 USB烧录工具
+Ventoy    
+https://www.ventoy.net/cn/index.html
+
+rufus    
+https://rufus.ie
+
+### 1.2 Arch半自动部署工具 [可选]
+`archinstall`
+> tips: 最小化安装，后续有图形界面需求单独安装    
+    
+### 1.3 Arch 国内源
+`sudo reflector --country 'China' --latest 10 --sort rate --save /etc/pacman.d/mirrorlist`
+
+    
+## 2. Wayland compositor
+### 2.1 niri
+https://github.com/YaLTeR/niri
+```zsh
+# fedora
+sudo dnf install niri
+
+# arch
+sudo pacman -S niri
+```
+
+### 2.2 dank material shell
+https://danklinux.com/    
+`curl -fsSL https://install.danklinux.com | sh`
+
+## 3. Display Manager
+### greetd    
+https://github.com/kennylevinsen/greetd    
+
+#### sysc-greet    
+https://github.com/Nomadcxx/sysc-greet    
+`paru -S sysc-greet`
+
+## 4. Shell
+### zsh
+```bash
+# fedora 
+sudo dnf install zsh
+# OR
+# arch
+sudo pacman -S zsh
+```
+
+#### oh-my-zsh
+https://ohmyz.sh    
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`    
+
+## 5. IME
+
+### fcitx5
+```sh
+# dnf5
+sudo pacman -S fcitx5 rime
+# OR
+# aur
+sudo dnf install fcitx5 rime
+```
+
+#### 万象输入法
+https://github.com/amzxyz/rime_wanxiang
+
+#### fcitx5 输入法皮肤
+https://github.com/catppuccin/fcitx5
+
+#### 解决微信不能使用fcitx5 中文输入
+```sh
+# 微信flatpak
+`sudo flatpak override --env=GTK_IM_MODULE=fcitx --env=QT_IM_MODULE=fcitx --env=XMODIFIERS=@im=fcitx com.tencent.WeChat`
+
+# 微信Linux
+`Exec=env GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx /usr/bin/wechat %U`
+```
+
+## 6. 安全和隐私
+### firewalld
+```zsh
+# arch
+sudo pacman -S firewalld
+```
+⚠️ 配置clash代理，把虚拟网卡加入firewalld白名单避免和防火墙冲突    
+`sudo firewall-cmd --permanent --zone=trusted --add-interface=FlClash`
+
+## 7. App
+
+### yazi
+https://github.com/sxyazi/yazi
+`paru -S yazi`
+
+```toml
+# ~/.config/yazi/yazi.toml
+[opener]
+edit = [
+    { run = 'nvim "$@"', block = true, desc = "Editor" },
+]
+
+[open]
+rules = [
+    { mime = "text/*", use = "edit" },
+    { name = "*", use = "edit" },
+]
+
+[mgr]
+show_hidden = true
+```
+
+
+### neovim
+https://neovim.io/
+https://github.com/neovim/neovim
+```zsh
+# fedora
+sudo dnf install neovim
+# OR
+sudo pacman -S neovim
+```
+
+#### lazyvim
+https://www.lazyvim.org/
+`git clone https://github.com/LazyVim/starter ~/.config/nvim`
+
+### MPV
+`paru -S mpv`
+https://mpv.io
+
+#### Modernz 
+https://github.com/Samillion/ModernZ
+
+## 8. Q&A
+### rpm 跳过数字签名安装
+`sudo rpm -ivh --nodigest --nofiledigest package.rpk`
+
+## 9. Colorschemes
+### Rose Pine
+https://rosepinetheme.com/
+
+### Catppuccin
+https://catppuccin.com/
