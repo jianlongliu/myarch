@@ -1,4 +1,5 @@
 // ~/.config/niri/myniri.kdl
+// 以下内容都是在dank material shell (quickshell)的基础上修改的.
 // 在config.kdl 中包含`include "myniri.kdl"`
 
 // cursor
