@@ -20,13 +20,7 @@ https://rufus.ie
 ## 2. Wayland compositor
 ### 2.1 niri
 https://github.com/YaLTeR/niri
-```zsh
-# fedora
-sudo dnf install niri
-
-# arch
-sudo pacman -S niri
-```
+`sudo pacman -S niri`
 
 ### 2.2 dank material shell
 https://danklinux.com/    
@@ -58,15 +52,6 @@ https://github.com/amzxyz/rime_wanxiang
 
 #### fcitx5 输入法皮肤
 https://github.com/catppuccin/fcitx5
-
-#### 解决微信不能使用fcitx5 中文输入
-```sh
-# 微信flatpak
-`sudo flatpak override --env=GTK_IM_MODULE=fcitx --env=QT_IM_MODULE=fcitx --env=XMODIFIERS=@im=fcitx com.tencent.WeChat`
-
-# 微信Linux
-`Exec=env GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx /usr/bin/wechat %U`
-```
 
 ## 6. 安全和隐私
 ### firewalld
@@ -100,6 +85,14 @@ https://mpv.io
 https://github.com/Samillion/ModernZ
 
 ## 8. Q&A
+#### 解决微信不能使用fcitx5 中文输入
+```sh
+# 微信flatpak
+`sudo flatpak override --env=GTK_IM_MODULE=fcitx --env=QT_IM_MODULE=fcitx --env=XMODIFIERS=@im=fcitx com.tencent.WeChat`
+
+# 微信Linux
+`Exec=env GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx /usr/bin/wechat %U`
+```
 //progressing
 
 ## 9. Colorschemes
