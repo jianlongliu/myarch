@@ -1,0 +1,8 @@
+// ~/.config/niri/myniri.kdl
+// 在config.kdl 中包含`include "myniri.kdl"`
+
+// cursor
+cursor {
+    xcursor-theme "BreezeX-RosePine-Linux"
+    xcursor-size 24
+}
