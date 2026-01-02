@@ -19,7 +19,7 @@ https://rufus.ie
     
 ## 2. Wayland compositor
 ### 2.1 niri
-https://github.com/YaLTeR/niri
+https://github.com/YaLTeR/niri    
 `sudo pacman -S niri`
 
 ### 2.2 dank material shell
