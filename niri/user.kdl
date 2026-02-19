@@ -1,8 +1,7 @@
-// ~/.config/niri/myniri.kdl
-// 以下内容都是在dank material shell (quickshell)的基础上修改的.
-// 在config.kdl 中包含`include "myniri.kdl"`
+// ~/.config/niri/user.kdl
 
 // cursor
+// 如果你在用dank material shell, 鼠标指针美化写进dms/cursor.kdl就好
 cursor {
     xcursor-theme "BreezeX-RosePine-Linux"
     xcursor-size 24
