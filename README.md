@@ -1,6 +1,6 @@
-![screenshot](/Screenshot.png)
-![screenshot](/Screenshot-X.png)
-![screenshot](/Screenshot from 2026-02-19 12-16-08.png）
+![screenshot](/screenshots/Screenshot.png)
+![screenshot](/screenshots/Screenshot-X.png)
+![screenshot](/screenshots/Screenshot_from_2026-02-19_12-16-08.png）
 
 ## 1. 准备
 ### 1.1 USB烧录工具
