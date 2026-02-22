@@ -1,3 +1,4 @@
+# ~/.config/systemd/user/wayvnc.service
 # wayvnc - wayland 上的用于远程的VNC Server
 # 
 # 以下命令用于启用和重载用户级守护进程
