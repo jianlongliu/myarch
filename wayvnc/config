@@ -1,0 +1,12 @@
+# ~/.config/wayvnc/config
+# 这是wayvnc 的配置文件
+# 需要`ssh-keygen -m PEM -t rsa -b 2048 -f ~/.config/wayvnc/rsa_key.pem -N ""`生成私钥
+# 注意: 不要添加密码，wayvnc 不认不能启动
+
+use_relative_paths=true
+address=0.0.0.0
+port=5900
+enable_auth=true
+username=<username>
+password=<password>
+rsa_private_key_file=rsa_key.pem
