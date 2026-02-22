@@ -81,6 +81,8 @@ https://github.com/neovim/neovim
 https://www.lazyvim.org/    
 `git clone https://github.com/LazyVim/starter ~/.config/nvim`
 
+## 多媒体播放
+
 ### MPV
 https://mpv.io    
 `paru -S mpv`     
@@ -90,6 +92,13 @@ https://github.com/Samillion/ModernZ
 
 ## 8. Q&A
 #### 解决微信不能使用fcitx5 中文输入
+
+## 远程协助
+
+### 向日葵
+`paru -S sunloginclient`
+https://jianl.dev/posts/sunloginclient/
+
 ```sh
 # 微信flatpak
 `sudo flatpak override --env=GTK_IM_MODULE=fcitx --env=QT_IM_MODULE=fcitx --env=XMODIFIERS=@im=fcitx com.tencent.WeChat`
