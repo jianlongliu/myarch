@@ -95,6 +95,9 @@ https://github.com/Samillion/ModernZ
 
 ## 远程协助
 
+### wayland
+`sudo pacman -S wayvnc`
+
 ### 向日葵
 `paru -S sunloginclient`
 https://jianl.dev/posts/sunloginclient/
