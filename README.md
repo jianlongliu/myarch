@@ -29,7 +29,7 @@ https://danklinux.com/
 
 ## 3. Display Manager
 
-[!img](https://github.com/Nomadcxx/sysc-greet/raw/master/assets/showcase.gif)
+![img](https://github.com/Nomadcxx/sysc-greet/raw/master/assets/showcase.gif)
 
 ### greetd    
 https://github.com/kennylevinsen/greetd    
