@@ -1,0 +1,18 @@
+# wayvnc - wayland 上的用于远程的VNC Server
+# 
+# 以下命令用于启用和重载用户级守护进程
+# `systemctl --user enable wayvnc.service`
+# `systemctl --user daemon-relad`
+
+[Unit]
+Description=wayvnc server for Niri
+After=network.service
+   
+[Service]
+Type=simple
+ExecStart=/usr/bin/wayvnc -g -r -C %h/.config/wayvnc/config
+Restart=always
+RestartSec=5
+   
+[Install]
+WantedBy=default.target
