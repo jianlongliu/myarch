@@ -1,3 +1,5 @@
+# ~/.zshrc
+
 # starship
 eval "$(starship init zsh)"
 
