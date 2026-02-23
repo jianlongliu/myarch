@@ -66,6 +66,9 @@ sudo pacman -S firewalld
 ⚠️ 配置clash代理，把虚拟网卡加入firewalld白名单避免和防火墙冲突    
 `sudo firewall-cmd --permanent --zone=trusted --add-interface=FlClash`
 
+### Secure Boot (安全引导) 自定义签名
+https://jianl.dev/posts/sbctl/
+
 ## 7. App
 
 ### yazi
