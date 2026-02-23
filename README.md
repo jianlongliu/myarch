@@ -46,6 +46,16 @@ https://github.com/Nomadcxx/sysc-greet
 https://ohmyz.sh    
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`    
 
+### `eza`    
+`sudo pacman -S eza`    
+https://github.com/eza-community/eza
+> `ls`的rust更现代化实现
+
+### `bat`    
+`sudo pacman -S bat`    
+https://github.com/sharkdp/bat
+> `cat`的现代化实现
+
 ## 5. IME
 
 ### fcitx5
