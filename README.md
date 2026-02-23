@@ -95,7 +95,7 @@ https://www.lazyvim.org/
 `git clone https://github.com/LazyVim/starter ~/.config/nvim`
 
 ## 8. 多媒体播放
-
+![mpv_with_modernz](/screenshots/Screenshot_MPV_with_Modernz.png)
 ### MPV
 https://mpv.io    
 `paru -S mpv`     
