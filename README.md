@@ -58,7 +58,7 @@ https://github.com/amzxyz/rime_wanxiang
 https://github.com/catppuccin/fcitx5
 
 ## 6. 安全和隐私
-### firewalld
+### 6.1 firewalld
 ```zsh
 # arch
 sudo pacman -S firewalld
@@ -66,16 +66,16 @@ sudo pacman -S firewalld
 ⚠️ 配置clash代理，把虚拟网卡加入firewalld白名单避免和防火墙冲突    
 `sudo firewall-cmd --permanent --zone=trusted --add-interface=FlClash`
 
-### Secure Boot (安全引导) 自定义签名
+### 6.2 Secure Boot (安全引导) 自定义签名
 https://jianl.dev/posts/sbctl/
 
 ## 7. App
 
-### yazi
+### 7.1 yazi
 https://github.com/sxyazi/yazi    
 `paru -S yazi`    
 
-### neovim
+### 7.2 neovim
 https://neovim.io/
 https://github.com/neovim/neovim    
 `sudo pacman -S neovim`
@@ -84,7 +84,7 @@ https://github.com/neovim/neovim
 https://www.lazyvim.org/    
 `git clone https://github.com/LazyVim/starter ~/.config/nvim`
 
-## 多媒体播放
+## 8. 多媒体播放
 
 ### MPV
 https://mpv.io    
@@ -93,17 +93,17 @@ https://mpv.io
 #### Modernz 
 https://github.com/Samillion/ModernZ
 
-## 8. Q&A
-#### 解决微信不能使用fcitx5 中文输入
+## 9. 远程协助
 
-## 远程协助
-
-### wayland
+### 9.1 wayland
 `sudo pacman -S wayvnc`
 
-### 向日葵
-`paru -S sunloginclient`
+### 9.2 向日葵
+`paru -S sunloginclient`    
 https://jianl.dev/posts/sunloginclient/
+
+## 10. Q&A
+#### 解决微信不能使用fcitx5 中文输入
 
 ```sh
 # 微信flatpak
@@ -114,7 +114,7 @@ https://jianl.dev/posts/sunloginclient/
 ```
 //progressing
 
-## 9. Colorschemes
+## 11. Colorschemes
 ### Rose Pine
 https://rosepinetheme.com/
 
