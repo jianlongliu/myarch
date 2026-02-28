@@ -10,7 +10,7 @@ https://www.ventoy.net/cn/index.html
 rufus    
 https://rufus.ie
 
-### 1.2 Arch半自动部署工具 [可选]
+### 1.2 (Optional) Arch半自动部署工具
 `archinstall`
 > tips: 最小化安装，后续有图形界面需求单独安装    
     
@@ -28,13 +28,11 @@ https://danklinux.com/
 `curl -fsSL https://install.danklinux.com | sh`
 
 ## 3. Display Manager
-
-![img](https://github.com/Nomadcxx/sysc-greet/raw/master/assets/showcase.gif)
-
 ### greetd    
 https://github.com/kennylevinsen/greetd    
 
-#### sysc-greet    
+![img](https://github.com/Nomadcxx/sysc-greet/raw/master/assets/showcase.gif)
+#### (Optional) sysc-greet    
 https://github.com/Nomadcxx/sysc-greet    
 `paru -S sysc-greet`
 
