@@ -82,7 +82,7 @@ https://jianl.dev/posts/sbctl/
 ## 7. App
 ### 7.1 Zen Browser
 ![zen](/screenshots/Screenshot-zen.png)
-`paru -S zen-browser`
+`paru -S zen-browser`    
 https://zen-browser.app/
 
 ### 7.2 yazi
