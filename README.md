@@ -81,7 +81,7 @@ https://jianl.dev/posts/sbctl/
 
 ## 7. App
 ### 7.1 Zen Browser
-![zen](/screenshots/Screenshot-zen-browser.png)
+![zen](/screenshots/Screenshot-zen.png)
 
 ### 7.2 yazi
 https://github.com/sxyazi/yazi    
