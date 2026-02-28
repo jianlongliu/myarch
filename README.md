@@ -80,12 +80,14 @@ sudo pacman -S firewalld
 https://jianl.dev/posts/sbctl/
 
 ## 7. App
+### 7.1 Zen Browser
+![zen](/screenshots/Screenshot-zen-browser.png)
 
-### 7.1 yazi
+### 7.2 yazi
 https://github.com/sxyazi/yazi    
 `paru -S yazi`    
 
-### 7.2 neovim
+### 7.3 neovim
 https://neovim.io/
 https://github.com/neovim/neovim    
 `sudo pacman -S neovim`
@@ -105,7 +107,7 @@ https://github.com/Samillion/ModernZ
 
 ## 9. 远程协助
 
-### 9.1 wayland
+### 9.1 wayvnc
 `sudo pacman -S wayvnc`
 
 ### 9.2 向日葵
