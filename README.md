@@ -59,8 +59,8 @@ https://github.com/sharkdp/bat
 > `cat`的现代化实现
 
 ## 5. Text Editor 文本编辑器
-### 5.1 Code-Server
-`paru -S code-server`
+### 5.1 Code-Server    
+`paru -S code-server`    
 https://jianl.dev/posts/code-server/
 
 ### 5.2 neovim
