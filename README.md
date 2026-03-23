@@ -116,11 +116,27 @@ https://github.com/Samillion/ModernZ
 ![rmpc](</screenshots/Screenshot from 2026-03-23 19-02-49.png>)
 ### mpd
 https://github.com/MusicPlayerDaemon/MPD    
-`sudo pacman -S mpd`
+```bash
+# install
+sudo pacman -S mpd
+
+# service
+# 注意: 因为权限问题，使用普通用户权限启动`mpd`服务
+systemctl enable --user mpd
+systemctl start --user mpd
+```
 
 #### rmpc
-https://github.com/mierak/rmpc    
-`sudo pacman -S rmpc mpc`
+https://github.com/mierak/rmpc
+```bash
+# install
+sudo pacman -S rmpc mpc
+
+# update metadata
+mpc update
+
+# 打开`rmpc`, 按`u`更新元数据
+```
 
 ## 10. Remote 远程协助
 ### 10.1 wayvnc
