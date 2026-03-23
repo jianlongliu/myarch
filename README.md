@@ -113,6 +113,15 @@ https://mpv.io
 #### Modernz 
 https://github.com/Samillion/ModernZ
 
+![]
+### mpd
+https://github.com/MusicPlayerDaemon/MPD    
+`sudo pacman -S mpd`
+
+#### rmpc
+https://github.com/mierak/rmpc    
+`sudo pacman -S rmpc mpc`
+
 ## 10. Remote 远程协助
 ### 10.1 wayvnc
 `sudo pacman -S wayvnc`
