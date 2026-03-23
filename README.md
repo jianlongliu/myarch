@@ -113,7 +113,7 @@ https://mpv.io
 #### Modernz 
 https://github.com/Samillion/ModernZ
 
-![]
+![rmpc](</screenshots/Screenshot from 2026-03-23 19-02-49.png>)
 ### mpd
 https://github.com/MusicPlayerDaemon/MPD    
 `sudo pacman -S mpd`
