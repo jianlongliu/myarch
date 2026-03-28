@@ -79,7 +79,7 @@ https://www.lazyvim.org/
 #### 万象输入法
 https://github.com/amzxyz/rime_wanxiang
 
-![rime]()
+![rime](</screenshots/Screenshot from 2026-03-28 11-50-45.png>)
 #### 万象输入法更新工具
 https://github.com/ca-x/rime-wanxiang-updater`
 `paru -S rime-wanxiang-updater`
