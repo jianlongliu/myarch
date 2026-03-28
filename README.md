@@ -79,6 +79,11 @@ https://www.lazyvim.org/
 #### 万象输入法
 https://github.com/amzxyz/rime_wanxiang
 
+![rime]()
+#### 万象输入法更新工具
+https://github.com/ca-x/rime-wanxiang-updater`
+`paru -S rime-wanxiang-updater`
+
 #### fcitx5 输入法皮肤
 https://github.com/catppuccin/fcitx5
 
