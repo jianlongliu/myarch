@@ -2,7 +2,8 @@
 
 // cursor
 // 如果你在用dank material shell, 鼠标指针美化写进dms/cursor.kdl就好
-cursor {
-    xcursor-theme "BreezeX-RosePine-Linux"
-    xcursor-size 24
-}
+// dms 新版本已经支持修改鼠标指针，遗弃
+// cursor {
+//     xcursor-theme "BreezeX-RosePine-Linux"
+//     xcursor-size 24
+// }
