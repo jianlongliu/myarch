@@ -1,0 +1,5 @@
+# /etc/pam.d/sudo
+# 为sudo-rs 添加指纹识别认证
+# sudo sed -i 's/^auth\s\+include\s\+system-auth/auth\t\tsufficient\tpam_fprintd.so\nauth\t\tinclude\t\tsystem-auth/' /etc/pam.d/sudo
+
+auth        sufficient  pam_fprintd.so
