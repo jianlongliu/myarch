@@ -1,0 +1,57 @@
+environment {
+    XCURSOR_SIZE "24"
+}
+
+layout {
+    // gaps 交给 DMS（dms/layout.kdl），勿在此覆盖
+
+    // A: 阴影加重 + 透明窗背后绘制（不写 color → matugen）
+    shadow {
+        on
+        softness 70
+        spread 8
+        offset x=0 y=14
+        draw-behind-window true
+    }
+
+    // B: 激活窗描边更明显（颜色仍用 matugen dms/colors.kdl）
+    focus-ring {
+        width 3
+    }
+}
+
+binds {
+    // Override niri built-in actions with dms equivalents
+    Mod+Shift+Slash { spawn "dms" "ipc" "call" "keybinds" "toggle" "niri"; }
+    Mod+Shift+E { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
+    // WeChat 1.25x — bypass DMS spotlight (DesktopEntries caches Exec)
+    Mod+Ctrl+W hotkey-overlay-title="WeChat" { spawn "/home/jianlongliu/bin/wechat"; }
+}
+
+// eDP-1 1600p 省电（EDID 不暴露该 mode，需 modeline；include 在 dms 之后）
+output "eDP-1" {
+    modeline 348.50 2560 2752 3032 3504 1600 1603 1609 1658 "+hsync" "-vsync"
+    scale 1.5
+    position x=0 y=0
+}
+
+// startup
+spawn-at-startup "xsettingsd"
+// DMS 自动应用可能抢在 modeline 前；延迟再钉一次 1600p
+spawn-at-startup "sh" "-c" "sleep 2; niri msg output eDP-1 modeline 348.50 2560 2752 3032 3504 1600 1603 1609 1658 +hsync -vsync; niri msg output eDP-1 scale 1.5"
+
+
+// blur
+window-rule {
+    match app-id="com.mitchellh.ghostty"
+//  match app-id=r#"org.quickshell$"#
+    match app-id=r#"com.danklinux.dms$"#
+    
+    match app-id="discord"
+    match app-id="org.gnome.Loupe"
+
+    opacity 0.80
+    background-effect {
+      blur true
+    }
+}

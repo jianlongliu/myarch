@@ -1,0 +1,13 @@
+[Unit]
+Description=Wayland clipboard persistence daemon
+Documentation=man:wl-clip-persist(1)
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/wl-clip-persist --clipboard both
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target
