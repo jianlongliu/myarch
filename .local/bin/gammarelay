@@ -1,0 +1,46 @@
+#!/bin/bash
+# gammarelay: control wl-gammarelay-rs brightness/gamma/temperature
+
+BUS_NAME=$(busctl --user list 2>/dev/null | awk '/wl.gammarelay/ {print $1; exit}')
+if [ -z "$BUS_NAME" ]; then
+    echo "wl-gammarelay-rs not running. Start it with: systemctl --user start wl-gammarelay"
+    exit 1
+fi
+
+CMD=$1
+VALUE=$2
+
+case "$CMD" in
+    brightness|b)
+        if [ -n "$VALUE" ]; then
+            busctl --user set-property "$BUS_NAME" /outputs/eDP_1 rs.wl.gammarelay Brightness d "$VALUE"
+        else
+            busctl --user get-property "$BUS_NAME" /outputs/eDP_1 rs.wl.gammarelay Brightness
+        fi
+        ;;
+    gamma|g)
+        if [ -n "$VALUE" ]; then
+            busctl --user set-property "$BUS_NAME" /outputs/eDP_1 rs.wl.gammarelay Gamma d "$VALUE"
+        else
+            busctl --user get-property "$BUS_NAME" /outputs/eDP_1 rs.wl.gammarelay Gamma
+        fi
+        ;;
+    temperature|temp)
+        if [ -n "$VALUE" ]; then
+            busctl --user set-property "$BUS_NAME" /outputs/eDP_1 rs.wl.gammarelay Temperature q "$VALUE"
+        else
+            busctl --user get-property "$BUS_NAME" /outputs/eDP_1 rs.wl.gammarelay Temperature
+        fi
+        ;;
+    *)
+        echo "Usage: $0 {brightness|gamma|temperature} [value]"
+        echo "  brightness b  0.0~1.0  (default 1.0)"
+        echo "  gamma      g  0.1~3.0  (default 1.0)"
+        echo "  temperature t  1000~25000K (default 6500)"
+        echo ""
+        echo "Examples:"
+        echo "  $0 brightness 0.6    # 60% brightness"
+        echo "  $0 gamma 0.8        # darker gamma"
+        echo "  $0 temperature 5000 # warmer (more yellow)"
+        ;;
+esac

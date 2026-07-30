@@ -43,6 +43,9 @@
 │   │   └── thumbfast.lua          #   缩略图预览
 │   └── script-opts/modernz.conf   #   ModernZ 配色布局
 ├── mpd/mpd.conf                   # 音乐播放守护
+├── rmpc/
+│   ├── config.ron                 #   rmpc MPD TUI 客户端配置
+│   └── theme.ron                  #   rmpc 主题/布局/配色
 ├── ghostty/config                 # 终端（SFMono Nerd Font）
 ├── environment.d/
 │   ├── 80-zen-wayland.conf        #   MOZ_ENABLE_WAYLAND=1
@@ -53,7 +56,12 @@
 ├── fcitx5/
 │   ├── config                     #   输入法热键
 │   └── profile                    #   keyboard-us + rime
+├── yazi/
+│   ├── yazi.toml                  #   文件管理器 openers
+│   └── package.toml               #   gvfs 插件
 ├── autostart/fcitx-5.desktop      # fcitx5 自启动
+├── mimeapps.list                  # MIME 文件关联
+├── xdg-terminals.list             # 默认终端 = ghostty
 └── systemd/user/                  # 用户级 systemd 服务
     ├── wl-clip-persist.service    #   Wayland 剪贴板持久化
     ├── wl-gammarelay.service      #   屏幕色温/亮度 daemon
@@ -62,6 +70,8 @@
 
 .zshrc                             # 别名、starship、oh-my-zsh 插件
 .bashrc                            # 备用 bash 配置
+.local/bin/
+  └── gammarelay                   # gamma/亮度/色温控制脚本
 pkglist-official.txt               # 官方包清单（154 个）
 pkglist-aur.txt                    # AUR 包清单（26 个）
 ```

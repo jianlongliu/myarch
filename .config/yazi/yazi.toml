@@ -1,0 +1,38 @@
+[mgr]
+show_hidden = true
+sort_by = "natural"
+sort_dir_first = true
+
+[preview]
+wrap = "yes"
+tab_size = 4
+
+[opener]
+nvim = [
+  { run = "nvim %*", block = true, spread = true, for = "unix" },
+]
+mpv = [
+  { run = "mpv %*", orphan = true, spread = true, for = "unix" },
+]
+rmpc = [
+  { run = "rmpc add %*", orphan = true, spread = true, for = "unix" },
+]
+loupe = [
+  { run = "loupe %*", orphan = true, spread = true, for = "unix" },
+]
+zen = [
+  { run = "zen %*", orphan = true, spread = true, for = "unix" },
+]
+
+[open]
+rules = [
+  { mime = "text/*",           use = "nvim" },
+  { mime = "application/json", use = "nvim" },
+  { mime = "application/xml",  use = "nvim" },
+  { mime = "application/yaml", use = "nvim" },
+  { mime = "application/toml", use = "nvim" },
+  { mime = "image/*",          use = "loupe" },
+  { mime = "video/*",          use = "mpv" },
+  { mime = "audio/*",          use = "rmpc" },
+  { mime = "application/pdf",  use = "zen" },
+]
