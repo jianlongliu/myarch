@@ -114,3 +114,7 @@ stow -t ~ --no-folding .
 
 - `main` — 从零安装文档
 - `ai-agent-generated` — 本分支，实际配置文件 + 包清单
+
+## 8. 致谢
+
+本分支由 [opencode](https://opencode.ai) (deepseek-v4-pro) 整理生成。
