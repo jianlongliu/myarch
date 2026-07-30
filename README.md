@@ -59,6 +59,7 @@
 ├── yazi/
 │   ├── yazi.toml                  #   文件管理器 openers
 │   └── package.toml               #   gvfs 插件
+├── opencode/AGENTS.md             # AI 编码助手行为指令
 ├── autostart/fcitx-5.desktop      # fcitx5 自启动
 ├── mimeapps.list                  # MIME 文件关联
 ├── xdg-terminals.list             # 默认终端 = ghostty
