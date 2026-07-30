@@ -1,0 +1,1 @@
+root=PARTUUID=f8f4252f-23ac-4cbe-a80f-3042b814b1fd zswap.enabled=0 rootflags=subvol=@ rw rootfstype=btrfs drm.edid_firmware=eDP-1:edid/CSO1411.bin quiet splash systemd.show_status=false rd.systemd.show_status=false

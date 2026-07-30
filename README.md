@@ -74,6 +74,10 @@
   └── gammarelay                   # gamma/亮度/色温控制脚本
 pkglist-official.txt               # 官方包清单（154 个）
 pkglist-aur.txt                    # AUR 包清单（26 个）
+edid/
+├── CSO1411.bin                    # eDP-1 面板 EDID override
+├── kernel-cmdline                 # 内核启动参数
+└── README.md                      # EDID 恢复说明
 ```
 
 ## 4. 包管理
