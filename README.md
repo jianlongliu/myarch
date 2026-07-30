@@ -98,7 +98,7 @@ cd myarch
 
 # 方式一：stow（推荐）
 sudo pacman -S stow
-stow -t ~ .
+stow -t ~ --no-folding .
 
 # 方式二：裸 git
 # git --git-dir=$HOME/myarch --work-tree=$HOME checkout ai-agent-generated
